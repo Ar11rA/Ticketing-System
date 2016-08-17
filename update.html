@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+background-image:url("5.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+	}
+.bml{
+	
+text-align:center;
+margin-left:427px;
+margin-right:300px;
+padding-bottom:10px;
+width:55%;
+}
+input[type=text],input[type=email],select{
+border:3px solid black;
+border-radius:5px;
+width:40%;
+padding:0;
+margin:0;
+height:30px;
+color:black;
+background-color:rgba(240,240,240,0.7);
+}
+input[type=radio]
+{width:20%;}
+textarea
+{font-size:20px;
+border:3px solid black;
+border-radius:5px;
+width:40%;
+padding:0;
+margin:0;
+height:80px;
+background-color:rgba(240,240,240,0.7);
+}
+input[type=submit],button
+{
+width:15%;
+height:35px;
+border-style:ridge;
+border-color: black;
+border-width:3px;
+border-radius:3px;
+background-color:hsla(135,85%,75%,0.6);
+cursor:pointer;
+}
+b
+{text-align:center;
+font-size:25px;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="bml">
+<i><h1 style="text-align:center;color:white;font-size:45px;margin-top:-10px;">Modify a Ticket</h1></i><br><br><br>
+<form action="index.html" method="post">
+<b>Name:</b><br>
+<input type="text" name="name" readonly>
+<br><br>
+<b>Registration No.:</b></br>
+<input type="text" name="rno" readonly>
+<br>
+<br>
+<b>Phone:</b></br>
+<input type="text" name="bday" readonly>
+<br>
+<br>
+<b>E-mail:</b></br>
+<input type="email" name="mail" readonly>
+<br>
+<br>
+<b>Query:</b></br>
+<textarea name="txtarea_qry" rows="10" cols="60" readonly> 
+</textarea>
+</br></br>	
+<button type="button" name="cancel">Search for solution</button>
+</br>	
+</br></br>
+<b>Solution:</b></br>
+<textarea name="txtarea_sol" placeholder="Enter solution" rows="10" cols="60" readonly> 
+</textarea>	
+<br><br>
+<b>Assigned to:</b></br>
+<input type="text" name="txt_employee" readonly>
+<br>
+<br>
+<input type="radio" name="rd1" value="approved"><b>Approved</b>&nbsp;&nbsp;<input type="radio" name="rd2" value="rejected"><b>Rejected</b>
+<br>
+<br>
+
+<input type="submit">&nbsp;&nbsp;&nbsp;<button type="button" name="cancel">Cancel</button>
+<br>
+<br>
+</form>
+</div>
+</body>
+</html>
+
